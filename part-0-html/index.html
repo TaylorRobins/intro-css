@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jared Potter</title>
+    <title>Taylor Robins</title>
     <link
       rel="stylesheet"
       href="../assets/font-awesome-4.7.0/css/font-awesome.min.css"
@@ -13,15 +13,18 @@
     />
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="header">
       <a href="#">
-        <!-- <img src="../images/profile.jpg" alt="Jared Potter Profile" /> -->
-        profile
+        <img
+          src="../images/profile.jpg"
+          alt="Taylor Robins Profile"
+          class="profile-pic"
+        />
       </a>
       <h1>
-        <strong>Hello everyone 👨‍💻, I'm Jared Potter</strong>
+        <strong>Hello everyone 👨‍💻, I'm Taylor Robins </strong>
         <br />
-        <small>I'm a Software Engineer in Salt Lake City, Utah, USA</small>
+        <small>I'm a Software Engineer in Logan, Utah, USA</small>
         <br />
         <p>HTML5, CSS, and JavaScript</p>
       </h1>
@@ -33,31 +36,23 @@
           method="POST"
         >
           <h2>Send me a message</h2>
-          <label>
-            Your name:
-            <input type="text" name="name" />
-          </label>
-          <label>
-            Your email:
-            <input type="text" name="_replyto" />
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <button type="submit">Send</button>
+
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="_replyto" placeholder="Email" />
+          <textarea name="message" placeholder="Message" rows="4"></textarea>
+          <button type="submit" class="submit-button">Send</button>
         </form>
         <ul>
           <li>
             <h3 class="fa fa-home">
-              <span>Salt Lake City, Utah, United States</span>
+              <span>Logan, Utah, United States</span>
             </h3>
           </li>
           <li>
             <h3 class="fa fa-envelope-o">
               <a
-                href="mailto:jaredpotter1@gmail.com?Subject=message from jaredpotter.dev"
-                ><span>jaredpotter1@gmail.com</span></a
+                href="mailto:robinsnom@gmail.com?Subject=message from taylorrobins.dev"
+                ><span>robinsnom@gmail.com</span></a
               >
             </h3>
           </li>
@@ -68,7 +63,7 @@
       <ul>
         <li>
           <a
-            href="https://www.google.com/jaredpotter"
+            href="https://www.twitter.com/LazySatchel25"
             class="fa fa-twitter icon"
           >
             <span>
@@ -78,9 +73,79 @@
         </li>
       </ul>
       <ul>
-        <li>© jared potter 2020</li>
+        <li>© taylor robins 2020</li>
       </ul>
     </footer>
   </body>
-  <style></style>
+  <style>
+    a {
+      color: #b2b2b2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #49bf9d;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~Header~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    .header {
+      background-color: #1f1815;
+      height: 100%;
+      text-align: right;
+      background-attachment: scroll, fixed;
+      background-image: url(../images/overlay.png),
+        url(../images/background.jpg);
+      background-size: auto, auto 100%;
+      background-repeat: repeat, no-repeat;
+    }
+
+    .profile-pic {
+      width: 6.25em;
+      border-radius: 50%;
+    }
+
+    .header strong,
+    .header small,
+    .header p {
+      color: white;
+    }
+
+    /* ~~~~~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    input,
+    textarea {
+      background-color: #f7f7f7;
+      border: solid 2px transparent;
+      border-radius: 0.35em;
+      outline: 0;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #49bf9d;
+    }
+
+    .submit-button {
+      cursor: pointer;
+      background-color: white;
+      color: #787878;
+      border-radius: 0.35em;
+      border: solid #787878;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+      box-shadow: none;
+      height: 3.15em;
+      min-width: 10em;
+      font-size: 16pt;
+    }
+    .submit-button:hover {
+      border: solid #49bf9d;
+      color: #49bf9d;
+    }
+  </style>
 </html>
